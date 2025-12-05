@@ -1,0 +1,11 @@
+:root {
+  --primer: #2ECC71
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--primer);
+}
