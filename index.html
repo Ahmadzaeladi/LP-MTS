@@ -1,293 +1,472 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MTs International Islamic School An Nashr - PPDB 2026</title>
 
-    <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- animasi -->
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    
-  />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
-  <body class="font-sans text-gray-800">
-
-    <!-- NAVBAR -->
-    <header id="navbar" class="fixed w-full top-0 z-50 bg-black/50 transition-all duration-300">
-      <nav class="container mx-auto flex justify-between items-center px-6 py-4">
-        <h2 class="text-2xl font-bold text-white tracking-wide">
+  <body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+    <header
+      id="navbar"
+      class="fixed w-full top-0 z-50 bg-transparent backdrop-blur-sm transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <a
+          href="#"
+          class="text-xl md:text-2xl font-bold text-white tracking-wide z-50"
+        >
           MTs An Nashr
-        </h2>
+        </a>
 
-        <!-- BUTTON HAMBURGER -->
-        <button id="menuBtn" class="md:hidden text-white text-3xl">
-          ☰
+        <button
+          id="menuBtn"
+          class="md:hidden text-white text-3xl z-50 focus:outline-none"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
         </button>
 
-        <ul id="menu"
-          class="hidden md:flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 absolute md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent p-6 md:p-0 text-white font-medium">
-          <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
-          <li><a href="#tentang" class="hover:text-yellow-300 transition">Tentang</a></li>
-          <li><a href="#program" class="hover:text-yellow-300 transition">Program</a></li>
-          <li><a href="#fasilitas" class="hover:text-yellow-300 transition">Fasilitas</a></li>
-          <li><a href="#testimoni" class="hover:text-yellow-300 transition">Testimoni</a></li>
-        </ul>
+        <div
+          id="menu"
+          class="fixed inset-0 bg-black/95 flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300 md:relative md:bg-transparent md:flex-row md:space-y-0 md:space-x-8 md:translate-x-0 md:flex md:inset-auto"
+        >
+          <a
+            href="#home"
+            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition"
+            onclick="closeMenu()"
+            >Home</a
+          >
+          <a
+            href="#tentang"
+            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition"
+            onclick="closeMenu()"
+            >Tentang</a
+          >
+          <a
+            href="#program"
+            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition"
+            onclick="closeMenu()"
+            >Program</a
+          >
+          <a
+            href="#fasilitas"
+            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition"
+            onclick="closeMenu()"
+            >Fasilitas</a
+          >
+          <a
+            href="#testimoni"
+            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition"
+            onclick="closeMenu()"
+            >Testimoni</a
+          >
+        </div>
       </nav>
     </header>
 
+    <section
+      id="home"
+      class="relative bg-[url('Assets/img/gedung3.jpeg')] bg-cover bg-center min-h-screen text-white flex items-center justify-center px-4 pt-16"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"
+      ></div>
 
-    <!-- HERO -->
-    <section id="home"
-      class="relative bg-[url('Assets/img/gedung3.jpeg')] bg-cover bg-center min-h-screen text-white flex items-center justify-center px-4">
-
-      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
-
-      <div class="relative z-10 text-center px-6 max-w-3xl">
-        <h1 class="tagline text-3xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight animate__animated animate__pulse">
-
-          Unggul dalam prestasi Kokoh dalam Akhlak
+      <div class="relative z-10 text-center max-w-4xl px-4">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight animate__animated animate__fadeInUp"
+        >
+          Loading Excellent <br />
+          <span class="text-[#27AE60]">Islamic Education</span>
         </h1>
 
-        <p class="slogan text-lg md:text-xl mb-8 text-gray-200">
-          Membentuk generasi Qurani yang unggul secara akademik, berakhlak mulia.
+        <p
+          class="text-base sm:text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          Membentuk generasi Qurani yang unggul secara akademik, berakhlak
+          mulia, dan siap bersaing di kancah global.
         </p>
 
-        <a 
+        <a
           href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20info%20lebih%20lanjut"
-          target="_blank" 
-  class="inline-flex items-center gap-2 px-5 py-3 text-sm md:text-base bg-green-500 hover:bg-green-600 text-white rounded-full shadow transition"
-
+          target="_blank"
+          class="animate__animated animate__fadeInUp animate__delay-1s inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold bg-[#27AE60] hover:bg-green-700 text-white rounded-full shadow-lg transition transform hover:scale-105"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
-            <path d="M20.52 3.48A11.9 11.9 0 0012.06 0C5.48 0 .14 5.34.14 11.92c0 2.1.55 4.16 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 005.79 1.47h.01c6.58 0 11.92-5.34 11.92-11.92a11.86 11.86 0 00-3.47-8.43zM12.06 21.4a9.45 9.45 0 01-4.82-1.33l-.35-.2-3.72.97 1-3.63-.23-.37a9.45 9.45 0 118.12 4.56zm5.48-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.13 4.53.72.31 1.28.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
-          </svg>
+          <ion-icon name="logo-whatsapp" class="text-xl"></ion-icon>
           Info Lebih Lanjut
         </a>
-
       </div>
     </section>
 
-    <!-- TENTANG -->
-    <section id="tentang" class="py-16 bg-gray-50">
-      <div class="container mx-auto text-center px-6">
-        <h1 class="about text-3xl font-bold text-[#27AE60] mb-4">
-          Tentang Mts An Nashr
+    <section id="tentang" class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h1 class="text-3xl md:text-4xl font-bold text-[#27AE60] mb-4">
+            Tentang MTs An Nashr
+          </h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div class="flex justify-center w-full">
+            <div
+              class="relative w-full max-w-md lg:max-w-full h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl group"
+            >
+              <img
+                src="Assets/img/foto 1.jpeg"
+                alt="Tentang Kami"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"
+              ></div>
+            </div>
+          </div>
+
+          <div class="text-left space-y-6">
+            <div>
+              <h3
+                class="text-2xl font-bold text-[#27AE60] mb-2 flex items-center gap-2"
+              >
+                <ion-icon name="eye-outline"></ion-icon> Visi
+              </h3>
+              <p
+                class="text-gray-700 bg-white p-4 rounded-lg shadow-sm border-l-4 border-[#27AE60]"
+              >
+                Terwujudnya Generasi yang Rabbani, Unggul, Cendekia.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-2xl font-bold text-[#27AE60] mb-2 flex items-center gap-2"
+              >
+                <ion-icon name="rocket-outline"></ion-icon> Misi
+              </h3>
+              <ul
+                class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 text-sm md:text-base"
+              >
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Manajemen terpadu &
+                  profesional
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Sistem pendidikan
+                  Islami
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Kurikulum Terpadu
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Mutu SDM
+                  Berkualitas
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Teknologi Informasi
+                  Optimal
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-500 mt-1">✔</span> Pembiasaan Ibadah &
+                  Al-Qur'an
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="program"
+      class="py-16 md:py-24 bg-gray-50 relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none"
+      >
+        <div
+          class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-green-500 blur-3xl"
+        ></div>
+        <div
+          class="absolute top-1/2 left-0 w-72 h-72 rounded-full bg-blue-500 blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h1
+          class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 animate__animated animate__fadeInUp"
+        >
+          Program <span class="text-[#27AE60]">Unggulan</span>
         </h1>
-        <p class="about-content max-w-3xl mx-auto text-gray-600 mb-8">
-          MTs An Nashr adalah sekolah Islam berstandar internasional yang
-          mengintegrasikan pendidikan agama, akademik global, dan teknologi
-          modern untuk membentuk generasi pemimpin dunia.
+        <p
+          class="text-gray-500 mb-12 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          Kurikulum terpadu yang dirancang untuk menyeimbangkan kecerdasan
+          spiritual, intelektual, dan sosial.
         </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
-          <div class="about-image flex justify-center overflow-hidden h-72 md:h-96">
-
-            <img
-            src="Assets/img/foto 1.jpeg"
-            class="shadow-lg rounded-xl  w-[80%] object-cover"
-            
-            />
-          </div>
-            
-          
-          <div class="text-left">
-            <h3 class="text-2xl font-semibold mb-2 text-[#27AE60]">Visi</h3>
-            <p class="mb-4 text-gray-600">
-              Menjadi sekolah Islam internasional unggulan yang melahirkan
-              generasi Qurani, berprestasi, dan berdaya saing global.
+        <div class="flex flex-wrap justify-center gap-6">
+          <div
+            class="program-card group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(30%-1.5rem)] bg-white border border-gray-100 shadow-lg rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-green-200 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-3xl mb-6 mx-auto group-hover:bg-green-600 group-hover:text-white transition duration-300 shadow-sm"
+            >
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">TAHFIZH</h3>
+            <p class="text-green-600 font-medium text-sm mb-2">Metode Mutqin</p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Target hafalan berkualitas dengan setoran rutin dan ujian berkala.
             </p>
+          </div>
 
-            <h3 class="text-2xl font-semibold mb-2 text-[#27AE60]">Misi</h3>
-            <ul class="list-disc ml-5 text-gray-600 space-y-1">
-              <li>Pendidikan berbasis Al-Qur’an dan Sunnah.</li>
-              <li>Kurikulum nasional & internasional (Cambridge).</li>
-              <li>Pembelajaran bilingual (Arab & English).</li>
-              <li>Penguatan karakter & leadership.</li>
-            </ul>
+          <div
+            class="program-card group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(30%-1.5rem)] bg-white border border-gray-100 shadow-lg rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-3xl mb-6 mx-auto group-hover:bg-cyan-600 group-hover:text-white transition duration-300 shadow-sm"
+            >
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">TAHSIN</h3>
+            <p class="text-cyan-600 font-medium text-sm mb-2">Metode Qiroati</p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Perbaikan bacaan Al-Qur'an sesuai tajwid dan makhraj yang benar.
+            </p>
+          </div>
+
+          <div
+            class="program-card group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(30%-1.5rem)] bg-white border border-gray-100 shadow-lg rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-200 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-sm"
+            >
+              <ion-icon name="calculator-outline"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">MNR</h3>
+            <p class="text-blue-600 font-medium text-sm mb-2">
+              Matematika Nalaria Realistik
+            </p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Mengasah logika berpikir kritis dalam memecahkan masalah
+              matematika.
+            </p>
+          </div>
+
+          <div
+            class="program-card group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(30%-1.5rem)] bg-white border border-gray-100 shadow-lg rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-200 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-3xl mb-6 mx-auto group-hover:bg-purple-600 group-hover:text-white transition duration-300 shadow-sm"
+            >
+              <ion-icon name="flask-outline"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">SNR</h3>
+            <p class="text-purple-600 font-medium text-sm mb-2">
+              Sains Nalaria Realistik
+            </p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Pembelajaran sains berbasis eksperimen dan pemahaman fenomena
+              alam.
+            </p>
+          </div>
+
+          <div
+            class="program-card group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(30%-1.5rem)] bg-white border border-gray-100 shadow-lg rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-yellow-200 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center text-yellow-600 text-3xl mb-6 mx-auto group-hover:bg-yellow-500 group-hover:text-white transition duration-300 shadow-sm"
+            >
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">BAHASA ARAB</h3>
+            <p class="text-yellow-600 font-medium text-sm mb-2">
+              Durusul Lughoh
+            </p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Penguasaan kosa kata dan percakapan harian (Daily Conversation).
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROGRAM -->
-    <section id="program" class="py-16">
-      <div class="container mx-auto text-center px-6">
-        <h1 class="program text-3xl font-bold text-[#27AE60] mb-8">
-          Program Unggulan
-        </h1>
-
- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-
-          <div class="program1 bg-white shadow-lg rounded-xl p-6 hover:scale-105 transition">
-            <h3 class="text-xl font-semibold text-[#27AE60] mb-2">
-              Tahfidz Qur'an
-            </h3>
-            <p class="text-gray-600">
-              Target hafalan 5–10 juz dengan metode internasional.
+    <section
+      id="fasilitas"
+      class="py-16 bg-gray-50 overflow-hidden h-[100vh] grid place-items-center relative w-full shadow-[0_3px_10px_rgba(0,0,0,0.3)]"
+    >
+      <ul class="slider">
+        <li
+          class="item"
+          style="background-image: url('Assets/img/gedung3.jpeg')"
+        >
+          <div class="content">
+            <h2 class="title">"Lossless Youths"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
             </p>
+            <button>Read More</button>
           </div>
-
-          <div class=" program2 bg-white hover:scale-105 transition shadow-lg rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-[#27AE60] mb-2">
-              Kurikulum Cambridge
-            </h3>
-            <p class="text-gray-600">
-              Standar internasional untuk sains & matematika.
+        </li>
+        <li
+          class="item"
+          style="background-image: url('Assets/img/ruangkelas.jpeg')"
+        >
+          <div class="content">
+            <h2 class="title">"Ruang belajar nyaman"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
             </p>
+            <button>Read More</button>
           </div>
-
-          <div class="proram3 bg-white hover:scale-105 transition shadow-lg rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-[#27AE60] mb-2">
-              Bilingual Class
-            </h3>
-            <p class="text-gray-600">
-              Bahasa Inggris & Arab aktif dalam pembelajaran.
+        </li>
+        <li
+          class="item"
+          style="background-image: url('Assets/img/perpus.jpeg')"
+        >
+          <div class="content">
+            <h2 class="title">"The Gate Keeper"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
             </p>
+            <button>Read More</button>
           </div>
-
-          <div class="program4 bg-white hover:scale-105 transition shadow-lg rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-[#27AE60] mb-2">
-              Leadership Program
-            </h3>
-            <p class="text-gray-600">
-              Membentuk karakter pemimpin muda Islami.
+        </li>
+        <li class="item" style="background-image: url('Assets/img/teras.jpeg')">
+          <div class="content">
+            <h2 class="title">"Lorem Ipsum"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
             </p>
+            <button>Read More</button>
           </div>
-        </div>
-      </div>
+        </li>
+        <li
+          class="item"
+          style="background-image: url('Assets/img/gedung2.jpeg')"
+        >
+          <div class="content">
+            <h2 class="title">"Urban Decay"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+      </ul>
+      <nav class="nav">
+        <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+        <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+      </nav>
     </section>
 
-    <!-- FASILITAS -->
-    <section id="fasilitas" class="py-16 bg-gray-50">
+    <section id="testimoni" class="py-16 md:py-24">
       <div class="container mx-auto text-center px-6">
-        <h2 class="text-3xl font-bold text-[#27AE60] mb-8">
-          Fasilitas Sekolah
+        <h2 class="text-3xl md:text-4xl font-bold text-[#27AE60] mb-12">
+          Kata Mereka
         </h2>
 
-       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-          <div class="bg-white p-6 shadow-md rounded-lg flex flex-col gap-4">
-            <div class="image h-48 overflow-hidden rounded-lg">
-              <img
-                src="Assets/img/ruangkelas.jpeg"
-                class="rounded-lg mb-4 w-full object-cover object-center "
-              />
-            </div>
-           
-            <h3 class="text-xl font-semibold text-[#27AE60]">
-              Ruang Kelas Nyaman
-            </h3>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg flex flex-col gap-4">
-            <div class="image h-48 overflow-hidden rounded-lg">
-              <img
-                src="Assets/img/perpus.jpeg"
-                class="rounded-lg mb-4 w-full h-full object-cover object-center"
-              />
-            </div>
-            
-            <h3 class="text-xl font-semibold text-[#27AE60]">
-              IT & Computer Lab
-            </h3>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg flex flex-col gap-4">
-            <div class="image h-48 overflow-hidden rounded-lg">
-              <img
-              src="Assets/img/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-              class="rounded-lg mb-4 w-full object-cover object-center rounded-lg"
-            />
-            </div>
-            
-            <h3 class="text-xl font-semibold text-[#27AE60]">
-              Digital Library Islami
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONI -->
-    <section id="testimoni" class="py-16">
-      <div class="container mx-auto text-center px-6">
-        <h2 class="text-3xl font-bold text-[#27AE60] mb-8">Testimoni</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <p class="italic text-gray-600 mb-4">
-              “Anak saya semakin disiplin, hafal Qur’an, dan percaya diri
-              berbicara bahasa Inggris.”
-            </p>
-            <h3 class="font-semibold text-[#27AE60]">Orang Tua Siswa</h3>
-          </div>
-
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <p class="italic text-gray-600 mb-4">
-              “Sekolah ini membentuk akhlak dan prestasi akademik saya.”
-            </p>
-            <h3 class="font-semibold text-[#27AE60]">Alumni 2024</h3>
-          </div>
-
-          <div class="bg-white p-6 shadow-lg rounded-lg">
-            <p class="italic text-gray-600 mb-4">
-              “Lingkungan Islami modern yang sangat mendukung.”
-            </p>
-            <h3 class="font-semibold text-[#27AE60]">Guru Senior</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORM -->
-    <!-- <section id="daftar" class="py-16 bg-[#27AE60] text-white">
-      <div class="container mx-auto text-center px-6 max-w-2xl">
-        <h2 class="text-3xl font-bold mb-6">Pendaftaran PPDB 2026</h2>
-
-        <form class="space-y-4 text-left">
-          <input
-            type="text"
-            placeholder="Nama Lengkap"
-            class="w-full p-3 rounded-lg text-gray-800"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            class="w-full p-3 rounded-lg text-gray-800"
-            required
-          />
-          <textarea
-            placeholder="Pesan Anda"
-            rows="4"
-            class="w-full p-3 rounded-lg text-gray-800"
-          ></textarea>
-
-          <button
-            class="w-full bg-yellow-400 text-[#145A32] py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 shadow-xl rounded-xl border-t-4 border-[#27AE60] hover:transform hover:-translate-y-2 transition"
           >
-            Kirim Pendaftaran
-          </button>
-        </form>
-      </div>
-    </section> -->
+            <div class="text-[#27AE60] text-4xl mb-4">❝</div>
+            <p class="italic text-gray-600 mb-6 leading-relaxed">
+              Anak saya semakin disiplin, hafal Qur’an, dan percaya diri
+              berbicara bahasa Inggris. Perubahan karakternya sangat positif.
+            </p>
+            <div class="font-bold text-gray-800">Bpk. H. Ahmad</div>
+            <div class="text-sm text-[#27AE60] font-semibold">
+              Orang Tua Siswa
+            </div>
+          </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
-      <p>&copy; 2025 An Nashr</p>
+          <div
+            class="bg-white p-8 shadow-xl rounded-xl border-t-4 border-[#27AE60] hover:transform hover:-translate-y-2 transition"
+          >
+            <div class="text-[#27AE60] text-4xl mb-4">❝</div>
+            <p class="italic text-gray-600 mb-6 leading-relaxed">
+              Sekolah ini membentuk akhlak dan prestasi akademik saya.
+              Guru-gurunya sangat suportif dalam mengembangkan bakat.
+            </p>
+            <div class="font-bold text-gray-800">Fatih Hibatullah</div>
+            <div class="text-sm text-[#27AE60] font-semibold">Alumni 2024</div>
+          </div>
+
+          <div
+            class="bg-white p-8 shadow-xl rounded-xl border-t-4 border-[#27AE60] hover:transform hover:-translate-y-2 transition"
+          >
+            <div class="text-[#27AE60] text-4xl mb-4">❝</div>
+            <p class="italic text-gray-600 mb-6 leading-relaxed">
+              Lingkungan Islami modern yang sangat mendukung untuk tumbuh
+              kembang anak di era digital ini.
+            </p>
+            <div class="font-bold text-gray-800">Ibu Sri Wahyuni</div>
+            <div class="text-sm text-[#27AE60] font-semibold">Wali Murid</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-2xl font-bold mb-4">MTs An Nashr</h2>
+
+        <div class="flex justify-center space-x-6 mb-8">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-[#27AE60] text-2xl transition"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-[#27AE60] text-2xl transition"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-[#27AE60] text-2xl transition"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </div>
+        <div class="border-t border-gray-800 pt-6">
+          <p class="text-gray-500 text-sm">
+            &copy; 2025 MTs An Nashr. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
     <script src="script.js"></script>
   </body>
 </html>
