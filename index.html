@@ -27,7 +27,7 @@
   <body class="font-sans text-gray-800 antialiased overflow-x-hidden">
     <header
       id="navbar"
-      class="fixed w-full top-0 z-50 bg-transparent backdrop-blur-sm transition-all duration-300"
+      class="fixed w-full top-0 z-50 bg-transparent transition-all duration-300"
     >
       <nav
         class="container mx-auto flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4"
@@ -37,7 +37,7 @@
           class="flex gap-3 md:text-2xl font-bold text-white tracking-wide z-50"
         >
           <img src="Assets/img/logo2.png" alt="" width="35px" />
-          <p>MTs An Nashr</p>
+          <div class="h-full flex items-center"><p>MTs An Nashr</p></div>
         </a>
 
         <button
@@ -49,36 +49,36 @@
 
         <div
           id="menu"
-          class="fixed inset-0 bg-[#27AE60]/95 flex flex-col items-center justify-start space-y-8 transform translate-x-full transition-transform duration-300 top-full md:relative md:bg-transparent md:flex-row md:space-y-0 md:space-x-8 md:translate-x-0 md:flex md:inset-auto"
+          class="fixed inset-0 z-40 flex flex-col items-start space-y-8 p-[3rem] bg-[#27AE60]/80 transform translate-x-[40%] transition-transform duration-300 md:ps-[3rem] md:pt-0 md:pb-0 md:pe-0 md:relative md:bg-transparent md:flex-row md:space-y-0 md:space-x-8 md:translate-x-0 md:flex md:inset-auto md:justify-end"
         >
           <a
             href="#home"
-            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
             onclick="closeMenu()"
+            class="nav-link font-bold text-white hover:text-yellow-300 transition drop-shadow-md"
             >Home</a
           >
           <a
             href="#tentang"
-            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
             onclick="closeMenu()"
+            class="nav-link font-bold text-white hover:text-yellow-300 transition drop-shadow-md"
             >Tentang</a
           >
           <a
             href="#program"
-            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
             onclick="closeMenu()"
+            class="nav-link font-bold text-white hover:text-yellow-300 transition drop-shadow-md"
             >Program</a
           >
           <a
             href="#fasilitas"
-            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
             onclick="closeMenu()"
+            class="nav-link font-bold text-white hover:text-yellow-300 transition drop-shadow-md"
             >Fasilitas</a
           >
           <a
             href="#testimoni"
-            class="nav-link text-xl md:text-base text-white hover:text-yellow-300 transition drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
             onclick="closeMenu()"
+            class="nav-link font-bold text-white hover:text-yellow-300 transition drop-shadow-md"
             >Testimoni</a
           >
         </div>
